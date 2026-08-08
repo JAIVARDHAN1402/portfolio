@@ -1,6 +1,12 @@
 # Jaivardhan Singh — Portfolio
 
+**🔗 Live site: [portfoliojaivardhan.vercel.app](https://portfoliojaivardhan.vercel.app/)**
+
 A modern, single-page developer portfolio built with React, Vite, Tailwind CSS v4 and Framer Motion.
+
+## Sections
+
+Hero · About & education · Skills · Experience · Projects · Coding profiles (live LeetCode stats) · Achievements · Contact
 
 ## Run it
 
@@ -37,11 +43,11 @@ Other scripts:
 - **LeetCode** is fetched live in the browser from a public community API, with a hardcoded fallback in `codingProfiles.leetcode.fallback` (`src/data.js`) for when that API is down. A green "Live" badge shows when the fetch succeeded.
 - **GeeksforGeeks** has no CORS-friendly public API, so those numbers are static in `codingProfiles.gfg`. Update them by hand after a big practice push.
 
-## Deploying to Vercel
+## Deployment
 
-1. Push this folder to a GitHub repo.
-2. Import the repo on [vercel.com](https://vercel.com) — it auto-detects Vite.
-3. Build command `npm run build`, output directory `dist`.
+Deployed on Vercel at [portfoliojaivardhan.vercel.app](https://portfoliojaivardhan.vercel.app/), linked to this repo — every push to `main` triggers an automatic redeploy.
+
+Build settings: framework `Vite`, build command `npm run build`, output directory `dist`.
 
 ## Stack
 
