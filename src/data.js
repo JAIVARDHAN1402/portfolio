@@ -41,7 +41,7 @@ export const skills = [
     title: 'Languages',
     icon: 'Code2',
     accent: 'violet',
-    items: ['C++ (Main)', 'JavaScript', 'SQL', 'Java'],
+    items: ['C++ (Main)', 'JavaScript', 'Python', 'SQL', 'Java'],
   },
   {
     title: 'Frontend',
@@ -148,6 +148,33 @@ export const projects = [
     live: 'https://placement-tracker-azure.vercel.app/',
     github: 'https://github.com/JAIVARDHAN1402/Placement_Tracker',
     accent: 'from-cyan-500/25 via-sky-500/10 to-transparent',
+  },
+  {
+    name: 'Bookify',
+    subtitle: 'Movie & Concert Ticket Booking Platform',
+    blurb:
+      'A full-stack ticket booking system with visual seat maps, live seat status, time-limited holds, a FIFO waitlist and QR-coded email tickets for movies and concerts.',
+    points: [
+      'Prevented double-booking with atomic seat holds inside MongoDB transactions, plus TTL expiry enforced by both a lazy sweep and a scheduled cleanup so seats free themselves even if the scheduler never runs.',
+      'Built role-based access (customer, organiser, admin) on JWT httpOnly cookies, with an organiser revenue dashboard, admin venue/seat-layout editor and Nodemailer + QR ticket delivery.',
+    ],
+    tech: ['Next.js 16', 'MongoDB', 'Mongoose', 'JWT', 'Nodemailer', 'Tailwind CSS'],
+    live: 'https://bookify-ticket.vercel.app',
+    github: 'https://github.com/JAIVARDHAN1402/Bookify',
+    accent: 'from-rose-500/25 via-pink-500/10 to-transparent',
+  },
+  {
+    name: 'AI Video Summarizer',
+    subtitle: 'Timestamped Video Summaries & Q&A',
+    blurb:
+      'A Python pipeline that turns a YouTube link or uploaded video into timestamped summaries, auto-generated chapters and a natural-language Q&A that cites the exact moment it answers from.',
+    points: [
+      'Chained Whisper transcription, PySceneDetect + YOLOv8 scene understanding, CLIP embeddings and BART/Flan-T5 over a FAISS index, with a map-reduce pass so hour-long videos still summarise cleanly.',
+      'Runs fully offline on CPU with no GPU or paid API required, and caches intermediate artifacts so re-runs on the same video skip transcription and detection entirely.',
+    ],
+    tech: ['Python', 'Whisper', 'YOLOv8', 'CLIP', 'FAISS', 'Streamlit'],
+    github: 'https://github.com/JAIVARDHAN1402/AI-Video-Summarizer',
+    accent: 'from-indigo-500/25 via-blue-500/10 to-transparent',
   },
   {
     name: 'ProjectX',
